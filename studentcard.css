@@ -1,0 +1,113 @@
+.student-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.student-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 25px 35px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e1e7f0;
+  transition: 0.3s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.student-avatar {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 30px;
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.student-info {
+  flex: 1;
+  border-left: 2px solid #d1d5db;
+  padding-left: 30px;
+}
+
+.student-info h2 {
+  font-size: 27px;
+  color: #172554;
+  margin: 0 0 12px;
+}
+
+.student-info p {
+  font-size: 18px;
+  color: #374151;
+  margin: 8px 0;
+}
+
+.cgpa {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.department-badge {
+  padding: 12px 28px;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Blue theme */
+
+.blue .student-avatar {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.blue .department-badge {
+  background: #2563eb;
+}
+
+.blue .cgpa {
+  color: #2563eb;
+}
+
+/* Green theme */
+
+.green .student-avatar {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.green .department-badge {
+  background: #059669;
+}
+
+.green .cgpa {
+  color: #059669;
+}
+
+/* Purple theme */
+
+.purple .student-avatar {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.purple .department-badge {
+  background: #7c3aed;
+}
+
+.purple .cgpa {
+  color: #7c3aed;
+}
